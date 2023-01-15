@@ -49,6 +49,12 @@ body{
 .text-center{
     text-align: center;
 }
+.fas.filled{
+    color: #FF900E;
+}
+.fas.empty{
+    color: #727272;
+}
 
 /* -----------------------------
     Main Styles
@@ -280,6 +286,46 @@ header{
 .sponsor img{
     mix-blend-mode: luminosity;
 }
+.review{
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+    padding: 30px 40px;
+}
+.review-title{
+    font-size:45px;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.review-description{
+    max-width: 580px;
+    margin: 0 auto 4rem;
+    color: #727272;
+    line-height: 29px;
+}
+.review-info p{
+    margin-bottom: 2rem;
+}
+.review-img{
+    margin-bottom: 1rem;
+}
+.review-img img{
+    width: 100px;
+    height: 100px;
+}
+.review-info p{
+    color: #727272;
+    line-height: 26px;
+}
+.review-wrapper{
+    margin-bottom: 65px;
+    gap: 1.5rem;
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
 /* -----------------------------
             Footer
    ------------------------------*/
@@ -342,11 +388,18 @@ footer p{
         margin: 0 auto;
         grid-template-columns: 1fr;
     }
+    .performance {
+        padding-bottom: 70px;
+    }
     .performance-description{
         margin-bottom: 30px;
     }
+    /* Review Section */
+    .review-wrapper{
+        flex-direction: column;
+    }
     /* Sponsor Section */
-    .sponsor-title, .sponsor-description, footer p, .performance, .services, .feature, .logo{
+    .reviews,.sponsor-title, .sponsor-description, footer p, .performance, .services, .feature, .logo{
         padding-left: 1.4rem;
         padding-right: 1.4rem;
     }
