@@ -1,0 +1,374 @@
+/* Common Styles */
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    background-color: none;
+    font-family: 'Work Sans';
+}
+body{
+    background-color: #FFFFFF;
+}
+/* -----------------------------
+    Utility Styles
+------------------------------- */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.btn-primary{
+    padding: 18px 15px;
+    background: #FF900E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-primary:hover{
+    border: 2px solid #FF900E;
+    color: #FF900E;
+    background: #FFFFFF;
+}
+.text-center{
+    text-align: center;
+}
+
+/* -----------------------------
+    Main Styles
+------------------------------- */
+/* --------------Header Section-------------- */
+header{
+    background-color: #FF900E1A;
+}
+.nav-bar{
+    padding-top: 50px;
+    margin-bottom: 105px;
+}
+.banner-image img{
+    width: 100%;
+}
+.logo{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.menu{
+    list-style-type: none;
+    gap: 25px;
+}
+.menu a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 10px;
+    border: 1px solid transparent;
+}
+.menu a:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.banner-title,.banner-description{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #131313; 
+}
+.banner-description{
+    text-align: center;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    line-height: 26px;
+}
+.banner-btn{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-image{
+    padding-bottom: 45px;
+}
+/*--------------- Feature Section --------------*/
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+    padding-top: 80px;
+    max-width: 1100px;
+    margin: 0 auto 130px;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-title{
+    margin-bottom: 24px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.feature-title span:first-of-type{
+    font-weight: 500;
+    color: #727272;
+}
+.feature-title span:last-of-type{
+    color: #FF900E;
+}
+.feature-description{
+    margin-bottom: 32px;
+    line-height: 26px;
+    font-size: 16px;
+}
+/* -----------------Services-------------- */
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 85px;
+    margin: 0 auto 130px;
+}
+.services-title{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+    padding: 21px;
+    border-left: 4px solid #FF900E;
+}
+.services-description{
+    color: #727272;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.services-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service{
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+.service-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.service-description{
+    font-size: 16px;
+    color: #727272;
+    line-height: 28px;
+}
+.service-image img{
+    width: 100%;
+}
+.experience-btn{
+
+    position: relative;
+    top: -70px;
+    left: -50px;
+    background: #FF900E;
+    color: #FFFFFF;
+    padding: 35px 42px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+.experience-btn h2{
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+}
+.experience-btn p{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+/* ------------- Performance Section------------ */
+.performance{
+    padding-bottom: 150px;
+}
+.performance-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.performance-description{
+    font-size: 16px;
+    line-height: 28px;
+    color: #727272da;
+    margin-bottom: 100px;
+    max-width: 600px;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.card{
+    padding: 40px 40px;
+    border-radius: 5px;
+    border: 1px solid #ff8f0ee4;
+    transition: all .7s ease;
+}
+.card:hover{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: #ff8f0e48;
+
+}
+
+.card h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.card p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
+.card-img{
+    margin-bottom: 10px;
+}
+/* --------------Sponsors Section-------------- */
+.sponsors{
+    margin-bottom: 130px;
+}
+.sponsor-title{
+    margin-bottom: 2rem;
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsor-description{
+    font-size: 16px;
+    line-height: 28px;
+    color: #727272;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+.sponsor img{
+    mix-blend-mode: luminosity;
+}
+/* -----------------------------
+            Footer
+   ------------------------------*/
+footer{
+    padding-bottom: 200px;
+}
+footer p{
+    padding: 40px 0;
+    background-color: #FFF4E7;
+    border-radius: 10px;
+    line-height: 28px;
+}
+/* ----------------------------------
+    Media Query For Responsive Design
+-----------------------------------*/
+@media only screen and (max-width:576px){
+    /*------------- Header -----------*/
+    .nav-bar{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .banner-info,.banner-image{
+        padding: 0 1.4rem;
+    }
+    .banner-title{
+        font-size: 45px; 
+    }
+    .banner-image{
+        padding-bottom: 45px;
+    }
+    /* -------------
+    Main
+    ------------- */
+    .feature{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 40px;
+    }
+    .feature-images{
+        grid-template-columns: repeat(4,1fr);
+        gap: 12px;
+    }
+    /* ------------Services---------- */
+    .services{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 5px;
+    }
+    .experience-btn h2{
+        font-size: 12vw
+    }
+    /* -------------Performance Section------------- */
+    .card-wrapper{
+        max-width: 250px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .performance-description{
+        margin-bottom: 30px;
+    }
+    /* Sponsor Section */
+    .sponsor-title, .sponsor-description, footer p, .performance, .services, .feature, .logo{
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    .sponsors-wrapper{
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* Footer */
+    footer p{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
